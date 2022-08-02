@@ -74,22 +74,34 @@
                         <!-- =========Текс, обращение ========= -->
                         <p class="modal-form-text">Оставьте свои данные, мы вам перезвоним</p>
                         <div class="modal-form-container">
+
                             <!-- ========= Имя ========= -->
-                            <div class="modal-field-container">
-                                <label class="modal-form-label" for="name">Имя</label>
-                                <input class="modal-form-input" type="text" name="name" id="name">
-                            </div>
+                            <label class="modal-form-label">
+                                <input class="modal-form-input" type="text" name="name" required>
+                                <span class="form-label-text">Имя</span>
+                                <svg class="modal-form-icon" width="18" height="18">
+                                    <use href="./images/icons.svg#modal-name"></use>
+                                </svg>
+                            </label>
 
                             <!-- ========= Телефон ========= -->
-                            <div class="modal-field-container">
-                                <label class="modal-form-label" for="tel">Телефон</label>
-                                <input class="modal-form-input" type="tel" name="tel" id="tel">
-                            </div>
+                            <label class="modal-form-label">
+                                <input class="modal-form-input" type="tel" name="tel" required>
+                                <span class="form-label-text">Телефон</span>
+                                <svg class="modal-form-icon" width="18" height="18">
+                                    <use href="./images/icons.svg#modal-phone"></use>
+                                </svg>
+                            </label>
+
                             <!-- ========= Почта ========= -->
-                            <div class="modal-field-container">
-                                <label class="modal-form-label" for="mail">Почта</label>
-                                <input class="modal-form-input" type="email" name="mail" id="mail">
-                            </div>
+                            <label class="modal-form-label">
+                                <input class="modal-form-input" type="email" name="mail" required>
+                                <span class="form-label-text">Почта</span>
+                                <svg class="modal-form-icon" width="18" height="18">
+                                    <use href="./images/icons.svg#modal-email"></use>
+                                </svg>
+                            </label>
+
                             <!-- ========= Комментарий ========= -->
                             <div class="modal-textarea-container">
                                 <label class="modal-form-label" for="comment">Комментарий</label>
@@ -97,17 +109,18 @@
                                     placeholder="Введите текст"></textarea>
                             </div>
                             <!-- Чекбокс - условия рассылки -->
-                            <div class="modal-checkbox-container">
-                                <input class="modal-checkbox-input" type="checkbox" name="newsletter" id="newsletter">
-                                <label class="modal-checkbox-label" for="newsletter">Соглашаюсь с рассылкой и принимаю
-                                    <a class="form-contarct" href="">Условия договора</a></label>
-                            </div>
+                            <!-- <div class="modal-checkbox-container"> -->
+                            <label class="modal-checkbox-label">Соглашаюсь с рассылкой и принимаю
+                                <a class="form-link-contarct" href="">Условия договора</a>
+                                <input class="modal-checkbox-input" type="checkbox" name="newsletter" required>
+                                <span class="modal-checkbox-icon"></span>
+                            </label>
+                            <!-- </div> -->
                         </div>
                         <!-- Кнопка - Отправить -->
                         <button class="modal-form-button" type="submit">Отправить</button>
                     </form>
                 </div>
-            </div>
             </div>
         </section>
 
@@ -478,7 +491,7 @@
                     <label for="subscribe-mail" class="footer-subscribe-label">Подпишитесь на рассылку</label>
                     <!-- Растянул лэйбл, чтобы не промазал пользователь и автофокус в поле инпута сработал -->
                     <div class="footer-form-wrapper">
-                        <input type="email" name="email" id="subscribe-mail" placeholder="E-mail">
+                        <input type="email" name="email" id="subscribe-mail" placeholder="E-mail" required>
                         <button type="submit" class="footer-subscribe-button">Подписаться
                             <svg class="footer-subscribe-icon" width="24" height="24">
                                 <use href="./images/icons.svg#footer-button-subscribe"></use>
