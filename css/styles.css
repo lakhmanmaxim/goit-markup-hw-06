@@ -467,7 +467,8 @@ img {
     transform 250ms var(--transition-timing-function);
 }
 
-.modal-form-label:focus-within .form-label-text {
+.modal-form-label:focus-within .form-label-text,
+.modal-form-input:not( :placeholder-shown) + .form-label-text {
     transform: translate(-42px,-30px);
 }
 
