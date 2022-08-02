@@ -275,6 +275,9 @@
 
     <footer class="footer">
         <div class="container footer-flex">
+
+            <!-- Контакты -->
+
             <div>
                 <a class="footer-logo" href="./index.html">Web<span class="footer-logo-studio">Studio</span></a>
                 <!-- <img src="./images/Footer-bg.jpg" alt="Задний фон футера" width="1600"> -->
@@ -294,6 +297,9 @@
                     </ul>
                 </address>
             </div>
+
+            <!-- Социальные сети -->
+
             <div class="footer-join">
                 <p class="footer-join-text">Присоединяйтесь</p>
                 <ul class="footer-social-list">
@@ -327,6 +333,25 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- Подписка -->
+
+            <form class="footer-subscribe-form">
+                <!-- <p class="footer-subscribe-text">Подпишитесь на рассылку</p> -->
+                <div class="footer-form-container">
+                    <label for="subscribe-mail" class="footer-subscribe-label">Подпишитесь на рассылку</label>
+                    <!-- Растянул лэйбл, чтобы не промазал пользователь и автофокус в поле инпута сработал -->
+                    <div class="footer-form-wrapper">
+                        <input type="email" name="email" id="subscribe-mail" placeholder="E-mail">
+                        <button type="submit" class="footer-subscribe-button">Подписаться
+                            <svg class="footer-subscribe-icon" width="24" height="24">
+                                <use href="./images/icons.svg#footer-button-subscribe"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
         </div>
 
     </footer>
