@@ -600,6 +600,10 @@ img {
     border-color: var(--focus-color);
 }
 
+.modal-checkbox-input:focus + .modal-checkbox-icon {
+    border: 2px outset var(--focus-color);
+}
+
 .modal-checkbox-label {
     display: flex;
     align-items: center;
